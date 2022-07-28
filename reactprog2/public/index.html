@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      
+    </div>
+    <!-- <script type="text/babel">
+      function Hello(){
+        return <h1>Hello there!</h1>;
+      } 
+
+      ReactDOM.render(<Hello />, document.getElementById('demo'))
+    </script> -->
+
+    <script>
+      class Car{
+        constructor(name){
+          this.brand = name;
+        }
+        present() { 
+          return 'Having this ' + this.brand;
+        }
+      }
+
+      class Model extends Car { 
+        constructor(name,mod){
+          super(name);
+          this.model=mod;
+        }
+        show(){
+          return this.present() + ', it is a '+ this.model
+        }
+      }
+      const newCar = new Model("Figa","B1.1");
+      docoument.write(newCar.show());
+      
+    </script>
+    
+  </body>
+</html>
